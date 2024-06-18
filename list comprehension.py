@@ -37,5 +37,18 @@ print (*novos_produtos, sep='\n')
 lista = [n for n in range(10) if n <= 5] # -> FILTRO!!!!!!!!
 print(lista)
 
+# list comprehension com + de 1 for
 
+# lista = [
+#     (x, y)
+#     for x in range(3)
+#     for y in range (3)
+# ]
+
+lista = [
+    [(x, l) for l in "Joui"]
+    for x in range(3) # para cada x, a linha acima é executada
+]
+
+print(lista)
 
